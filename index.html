@@ -18,19 +18,20 @@
   <body>
     <nav>
       <button id="dropdown_btn"></button>
-      <a href="index.html">home</a>
+      <a href="index.html" id="home">home</a>
     </nav>
-    <div id="nav_menu">
-      <div id="nav_header">
+    <div id="nav_menu" class="close">
+      <div class="nav_elt hide" id="nav_header">
         <h1>explore</h1>
         <span></span>
       </div>
-      <div class="col">
+      <div class="col nav_elt hide">
+        <a href="index.html">Home</a>
         <a href="cc.html">Literary Magazine</a>
-        <a href="xr.html">Extinction Rebellion</a>
         <a href="insta.html">Algonquin Books</a>
       </div>
-      <div class="col">
+      <div class="col nav_elt hide">
+        <a href="xr.html">Extinction Rebellion</a>
         <a href="gallery.html">Gallery</a>
         <a href="about.html">About Me</a>
       </div>
@@ -43,15 +44,44 @@
         <p class="coe">COE</p>
         <p class="coe">COE</p>
       </div>
-      <h3 id="cap">
+      <h2 id="cap">
         Web Design and Development
-      </h3>
+      </h2>
     </header>
 
     <article>
-      <div class="card"></div>
-      <div class="card"></div>
-      <div class="card"></div>
+      <div class="card">
+        <div class="rect purple"></div>
+        <a href="cc.html" class="slider">
+          <div class="place"><h1>The Charles Carter Literary Magazine</h1></div>
+          <div class="pos">
+            <h2>
+              president, web design and development
+            </h2>
+          </div>
+        </a>
+      </div>
+
+      <div class="card">
+        <div class="rect blue"></div>
+        <a href="algonquin.html" class="slider">
+          <div class="place"><h1>Algonquin Books</h1></div>
+          <div class="pos">
+            <h2>marketing, web design and development intern</h2>
+          </div>
+        </a>
+      </div>
+
+      <div class="card">
+        <div class="rect orange"></div>
+        <a href="xr.html" class="slider">
+          <div class="place"><h1>Extinction Rebellion</h1></div>
+          <div class="pos">
+            <h2>community organizing, graphic design</h2>
+          </div>
+        </a>
+      </div>
+
       <div id="about">
         <a href=""><img src="" alt=""/></a>
         <a href=""

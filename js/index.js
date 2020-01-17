@@ -1,6 +1,6 @@
+// expand multicolor header of name "COE"
+// ease out
 var names = document.getElementsByClassName("coe");
-var cap = document.getElementById("cap");
-
 var progress = 50;
 var duration = 2000;
 var interval = 30;
@@ -21,3 +21,14 @@ function expand() {
   }
 }
 var animation = setInterval(expand, interval);
+
+// fade in cards as they come on screen
+var cards = document.getElementsByClassName("card");
+window.addEventListener("scroll", function() {
+  var floor = this.innerHeight;
+  for (c of cards) {
+    if (c.getBoundingClientRect().top < floor) {
+      c.style.animation = "fadeIn 2s ease-in 0s forwards";
+    }
+  }
+});
