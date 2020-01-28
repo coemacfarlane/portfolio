@@ -163,4 +163,40 @@ nav a {
 #nav_menu a {
   color: var(--bg-color);
   margin-top: 1.2em;
+  transition-duration: 0.4s;
+  -moz-transition-duration: 0.4s;
+}
+#nav_menu a:hover {
+  color: var(--purple);
+  animation: color-rotate 2s 0.4s infinite;
+}
+
+@keyframes color-rotate {
+  0% {
+    color: var(--purple);
+  }
+  33% {
+    color: var(--blue);
+  }
+  66% {
+    color: var(--orange);
+  }
+  100% {
+    color: var(--purple);
+  }
+}
+
+@-webkit-keyframes color-rotate {
+  0% {
+    color: var(--purple);
+  }
+  33% {
+    color: var(--blue);
+  }
+  66% {
+    color: var(--orange);
+  }
+  100% {
+    color: var(--purple);
+  }
 }
